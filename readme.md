@@ -6,6 +6,12 @@ The `index.html` file is the **entry point** that loads and displays the challen
 
 ---
 
+## Live link
+
+- Click here to visit the live site [Here 😅](https://danny-wits.github.io/javascript-challenges/)
+
+---
+
 ## ❓ Why this Repo?
 
 This repository was created as part of the **MCA Web Club** initiative to:
