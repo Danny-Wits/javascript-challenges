@@ -15,7 +15,7 @@ function generate_password(len) {
   //change the code below if you want to provide you own implementation @Danny-Wits
 
   //random alphanumeric password generate by taking a random number and converting it to base 36
-  //then slicing the first 2 characters as there will always be 0.
+  //then slicing the first 2 characters as they will always be 0.
 
   return Math.random()
     .toString(36)
