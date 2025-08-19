@@ -4,9 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/common.css" />
-    <title>Document</title>
+    <title>Challenge 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
-    <p>2</p>
+    <div class="challenge-container">
+      <h2 class="challenge-title">Challenge 2</h2>
+      <p class="challenge-description">
+        A function that returns the most repeated/common element in an array
+      </p>
+    </div>
+    <div class="code-container">
+      <p>----source code</p>
+      <pre><code class="language-js">
+function mostFrequentElement(array) {
+  return array
+    .sort(
+      (a, b) =>
+        array.filter((v) => v === a).length -
+        array.filter((v) => v === b).length
+    )
+    .pop();
+}
+    </code></pre>
+    </div>
+    <div class="interaction i1">
+      <label for="input"
+        >Enter the array here <br />(use comma separated values like
+        1,2,3)</label
+      >
+      <input type="text" id="input" placeholder="Input in format: 1,2,3" />
+      <button id="submit">Calculate</button>
+      <p id="output">Output</p>
+    </div>
+
+    <script src="/challenges/js/challenge_2.js"></script>
   </body>
 </html>

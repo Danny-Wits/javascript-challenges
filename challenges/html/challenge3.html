@@ -3,10 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
     <link rel="stylesheet" href="/common.css" />
+    <title>Challenge 3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
-    <p>3</p>
+    <div class="challenge-container">
+      <h2 class="challenge-title">Challenge 3</h2>
+      <p class="challenge-description">
+        A function that generates a random password with a given length
+      </p>
+    </div>
+    <div class="code-container">
+      <p>----source code</p>
+      <pre><code class="language-js">
+function generate_password(len) {
+
+  //random alphanumeric password generate by taking a random number and converting it to base 36
+  //then slicing the first 2 characters as there will always be 0.
+
+  return Math.random()
+    .toString(36)
+    .slice(2, len + 2);
+}
+    </code></pre>
+    </div>
+    <div class="interaction i1">
+      <label for="input">Enter the length of the password here</label>
+      <input type="number" id="input" placeholder="Input " />
+      <button id="submit">Click Here to Generate</button>
+      <p id="output">Output</p>
+    </div>
+
+    <script src="/challenges/js/challenge_3.js"></script>
   </body>
 </html>

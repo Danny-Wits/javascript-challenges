@@ -1,10 +1,8 @@
-const switchButton = document.getElementById("switch");
+const challengeSelector = document.getElementById("challengeSelector");
 
-switchButton.addEventListener("click", () => {
-  const selectedChallenge = document.getElementById("challengeSelector").value;
+challengeSelector.addEventListener("change", () => {
+  const selectedChallenge = challengeSelector.value;
   const challengeFrame = document.getElementById("challengeFrame");
-  console.log(selectedChallenge);
-
   challengeFrame.setAttribute(
     "src",
     `challenges/html/challenge${selectedChallenge}.html`

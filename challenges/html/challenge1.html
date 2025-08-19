@@ -5,9 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/common.css" />
     <title>Challenge 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/a11y-dark.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+
+    <script>
+      hljs.highlightAll();
+    </script>
   </head>
   <body>
+    <div class="challenge-container">
+      <h2 class="challenge-title">Challenge 1</h2>
+      <p class="challenge-description">
+        A function that takes a string and returns the length of the string
+      </p>
+    </div>
+    <div class="code-container">
+      <p>----source code</p>
+      <pre><code class="language-js">
+function reverse_string(str) {
+  return str.splice("").reverse().join("");
+}
+    </code></pre>
+    </div>
+    <div class="interaction i1">
+      <label for="input">Enter the string here</label>
+      <input type="text" id="input" placeholder="Input" />
+      <button id="submit">Convert</button>
+      <p id="output">Output</p>
+    </div>
 
-    
+    <script src="/challenges/js/challenge_1.js"></script>
   </body>
 </html>
