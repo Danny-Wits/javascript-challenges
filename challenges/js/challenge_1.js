@@ -14,5 +14,9 @@ button.addEventListener("click", () => {
  */
 function reverse_string(str) {
   //change the code below if you want to provide you own implementation @Danny-Wits
+  //using split, reverse and join
+  //split converts the string into an array eg "hello" -> ["h", "e", "l", "l", "o"]
+  //reversing using the reverse method on array ["h", "e", "l", "l", "o"] -> ["o", "l", "l", "e", "h"]
+  //join converts the array into a string ["o", "l", "l", "e", "h"] -> "olleh"
   return str.split("").reverse().join("");
 }

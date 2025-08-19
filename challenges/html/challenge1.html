@@ -26,6 +26,11 @@
       <p>----source code</p>
       <pre><code class="language-js">
 function reverse_string(str) {
+
+  //split converts the string into an array eg "hello" -> ["h", "e", "l", "l", "o"]
+  //reversing using the reverse method on array ["h", "e", "l", "l", "o"] -> ["o", "l", "l", "e", "h"]
+  //join converts the array into a string ["o", "l", "l", "e", "h"] -> "olleh"
+  
   return str.splice("").reverse().join("");
 }
     </code></pre>

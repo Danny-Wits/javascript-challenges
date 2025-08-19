@@ -25,6 +25,9 @@ button.addEventListener("click", () => {
  */
 function mostFrequentElement(array) {
   //change the code below if you want to provide you own implementation @Danny-Wits
+
+  //Sorting the array in descending order of frequency
+  // using array.filter to count the frequency
   return array
     .sort(
       (a, b) =>
